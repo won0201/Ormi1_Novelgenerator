@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>소설 생성기</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 class="logo">
+        <img src="./assets/img/logo.png" alt="소설생성기">
+      </h1>
+    </div>
+      <div class="chat-container">
+      <section class = "question-section">
+        <h2></h2>
+        <div class = "novelForm">
+          <form>
+            <div class="input">
+              <h3>원하시는 키워드를 말씀해주세요.</h3>
+              <input type="text" id="keyword" placeholder="키워드" required>
+              <h3>원하시는 장르를 말씀해주세요.</h3>
+              <input type="text" id="genre" placeholder="장르" required>
+              <h3>소설의 분량을 말씀해주세요. (예) 500자 이상</h3>
+              <input type="text" id="charCount" placeholder="글자 수" required>
+            </div>
+            <div class="submit-button">
+              <button type="submit">생성하기</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    <script src="./assets/js/index.js" type="text/javascript"></script>
+  </body>
+</html>

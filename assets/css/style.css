@@ -1,0 +1,58 @@
+body {
+  background-color: #fcf9a9a1;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* 헤더 */
+h1 > img {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 입력란 */
+.novelForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-button button:hover {
+  background-color: #45a049;
+}
