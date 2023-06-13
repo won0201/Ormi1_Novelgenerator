@@ -9,6 +9,7 @@ body {
 }
 
 .loading img {
+  margin-top: 0px;
   height: 30vh;
   display: flex;
   align-items: center;
@@ -24,5 +25,27 @@ body {
   }
   to {
     transform: rotate(359deg);
+  }
+}
+
+.loadingChar img {
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: wave 3s infinite ease-in-out;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
