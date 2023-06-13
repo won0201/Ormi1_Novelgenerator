@@ -13,21 +13,81 @@ h1 > img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: -20px;
 }
 
+/* 소설 생성 */
 ul {
   list-style-type: none;
   padding: 0;
 }
-.question {
-  background-color: #f2f2f2;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
+
 .answer {
-  background-color: #d9d9d9;
+  background-color: #bee1fe;
+  border: 5px solid #bee1fe;
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  overflow-y: auto;
+  max-width: 800px;
+}
+
+/* 입력 정보 */
+.question {
+  border: 5px solid #83c4f8;
+  background-color: #83c4f8;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* 애니메이션 */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+/* 로딩 */
+.loading-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.loading img {
+  margin-top: 0px;
+  height: 30vh;
+  animation: spin 2000ms infinite linear;
+}
+
+.loadingChar img {
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: wave 3s infinite ease-in-out;
 }
