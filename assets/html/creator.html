@@ -12,11 +12,26 @@
     <div class="header">
       <h1 class="logo">
         <img src="../img/logo.png" alt="소설생성기" />
+      </h1>
     </div>
-    <section class="answer-section">
-        <ul id="chatList"></ul>
-      </section>
+    <section class="generator">
+      <div class="etc">
+        <ul id="infoList"></ul>
+      </div>
+      <div class="novel">
+        <ul id="chatList" class="novel-list"></ul>
+      </div>
+    </section>
 
-      <script src="../js/creator.js"></script>
+    <div id="loading-indicator" class="loading-indicator">
+      <div class="loading">
+        <img src="../img/loading.png" alt="로딩중" />
+      </div>
+      <div class="loadingChar">
+        <img src="../img/loading2.png" alt="소설을 작성하는 중입니다" />
+      </div>
+    </div>
+
+    <script src="../js/creator.js"></script>
   </body>
 </html>
